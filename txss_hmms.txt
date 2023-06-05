@@ -1,0 +1,4 @@
+https://raw.githubusercontent.com/gem-pasteur/Macsyfinder_models/master/models/TXSS/profiles/T4SS_I_traU.hmm	I_traU.hmm
+https://raw.githubusercontent.com/gem-pasteur/Macsyfinder_models/master/models/TXSS/profiles/T4SS_t4cp1.hmm	t4cp1.hmm
+https://raw.githubusercontent.com/gem-pasteur/Macsyfinder_models/master/models/TXSS/profiles/T4SS_t4cp2.hmm	t4cp2.hmm
+https://raw.githubusercontent.com/gem-pasteur/Macsyfinder_models/master/models/TXSS/profiles/T4SS_virb4.hmm	virb4.hmm
