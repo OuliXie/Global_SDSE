@@ -39,19 +39,19 @@ Excludes sequences with an internal stop codon and takes longest remaining seque
 Generates representative protein pangenome file pan_genome_reference_protein.fa
 
 **Step 3.**
-Run `$ mge_hmmsearch.sh -g <pangenome_reference_protein.fa> -i <gene_presence_absence.csv> -p <path/to/hmms/folder>`
+Run `$ bash mge_hmmsearch.sh -g <pangenome_reference_protein.fa> -i <gene_presence_absence.csv> -p <path/to/hmms/folder>`
 
 Runs hmmsearch against pangenome genes to annotate recombinase/integrase genes from mobile genetic elements (MGEs).
 Looks for recombinase subfamilies, phage structural proteins and essential type IV secretion system proteins (coupling protein, ATPase).
 Uses eggnog-mapper v2.1.7 DIAMOND search under --sensitive mode for annotating phage structural proteins.
 Consider running eggnog-mapper separately as takes >30 mins - commented out of script by default
 
-e.g. `$ emapper.py -i pan_genome_reference_protein.fa -o sdse`
+e.g. `$ python emapper.py -i pan_genome_reference_protein.fa -o sdse`
 
 Expects hmms folder to contain subdirectories hmms/recombinase and hmms/T4SS containing their profile hmms
 
 **Step 4.**
-Run `$ order_annotated_gene_presence.py -i <annotated_gene_presence_absence.csv> -g <path/to/postpanaroo_gffs/directory>`
+Run `$ python order_annotated_gene_presence.py -i <annotated_gene_presence_absence.csv> -g <path/to/postpanaroo_gffs/directory>`
 
 Generates gene_presence_absence_roary file ordered by sequence ID for each sequence.
 Uses the order of CDS from post-Panaroo corrected gffs to order the genes for each genome.
@@ -62,7 +62,7 @@ Expects annotated_gene_presence_absence.csv file which has been annotated by mge
 **Step 5.**
 filter_core_pair_summary.sh is the main script used to generate analysis outputs.
 ```
-$ filter_core_pair_summary.sh 
+$ bash filter_core_pair_summary.sh 
   -n <max_acc lower threshold>
   -i <path/to/corekaburra/output/folder>
   -r <recombinase_rules.tsv>
