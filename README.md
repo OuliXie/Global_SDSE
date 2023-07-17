@@ -51,7 +51,7 @@ e.g. `$ python emapper.py -i pan_genome_reference_protein.fa -o sdse`
 Expects hmms folder to contain subdirectories hmms/recombinase and hmms/T4SS containing their profile hmms
 
 **Step 4.**
-Run `$ python order_annotated_gene_presence.py -i <annotated_gene_presence_absence.csv> -g <path/to/postpanaroo_gffs/directory>`
+Run `$ python order_gene_presence_absence.py -i <annotated_gene_presence_absence.csv> -g <path/to/postpanaroo_gffs/directory>`
 
 Generates gene_presence_absence_roary file ordered by sequence ID for each sequence.
 Uses the order of CDS from post-Panaroo corrected gffs to order the genes for each genome.
