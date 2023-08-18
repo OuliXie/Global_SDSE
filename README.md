@@ -1,5 +1,5 @@
 # MGE scripts
-Scripts used to extract and classify accessory genomic segments in global SDSE publication
+Scripts used to extract and classify accessory genomic segments in global SDSE manuscript (https://doi.org/10.1101/2023.08.10.552873).
 Automated MGE class calling from Corekaburra (https://github.com/milnus/Corekaburra) and Panaroo (https://github.com/gtonkinhill/panaroo) outputs based on recombinase types within accessory segments
 
 Modified from the MGE classification scheme developed by Khedkar S. et al. NAR 2022 DOI: 10.1093/nar/gkac163 
